@@ -1,0 +1,18 @@
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\BL\bin\Debug\BL.dll
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\BL\bin\Debug\BL.pdb
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\BL\bin\Debug\Common.dll
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\BL\bin\Debug\DAL.dll
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\BL\bin\Debug\Common.pdb
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\BL\bin\Debug\DAL.pdb
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\BL\obj\Debug\BL.dll
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\BL\obj\Debug\BL.pdb
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\BL\bin\Debug\BL.dll
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\BL\bin\Debug\BL.pdb
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\BL\bin\Debug\Common.dll
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\BL\bin\Debug\DAL.dll
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\BL\bin\Debug\Common.pdb
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\BL\bin\Debug\DAL.pdb
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\BL\obj\Debug\BL.dll
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\BL\obj\Debug\BL.pdb

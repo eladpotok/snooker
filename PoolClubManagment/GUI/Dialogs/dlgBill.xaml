@@ -1,0 +1,98 @@
+﻿<Window x:Class="GUI.Dialogs.dlgBill"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        FlowDirection="RightToLeft"
+        xmlns:cnv="clr-namespace:GUI.Converters"
+        Title="חשבון" Height="300" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Resources>
+            <cnv:cnvDateTimeToShorterConverter 
+                x:Key="cnvDateTimeToShorterConverter"/>
+            <cnv:cnvAmountToTotalPriceMultiConverter 
+                x:Key="cnvAmountToTotalPriceMultiConverter"/>
+            <cnv:cnvOrderToTotalPriceIncludeGameTimeConverter
+                x:Key="cnvOrderToTotalPriceIncludeGameTimeConverter"/>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+        </Grid.Resources>
+        <TextBlock Text="מקום הישיבה :"
+                   Grid.Row="0"/>
+        <TextBlock Text="זמן המשחק :"
+                   Grid.Row="1"/>
+        <TextBlock Text="{Binding GameTime, Converter={StaticResource cnvDateTimeToShorterConverter}}"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+        <GroupBox Header="פריטים :"
+                  Grid.Row="2"
+                  Grid.ColumnSpan="2"
+                  Margin="5">
+            <ListBox Name="lsbProducts"
+                     ItemsSource="{Binding ItemsToOrder}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.Resources>
+                                <Style TargetType="{x:Type TextBlock}">
+                                    <Setter Property="Margin" Value="5"/>
+                                </Style>
+                            </Grid.Resources>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="המוצר :"
+                                       Grid.Column="0"/>
+                            <TextBlock Text="{Binding Item.Name}"
+                                       Grid.Column="1"/>
+                            <TextBlock Text="כמות :"
+                                       Grid.Column="2"/>
+                            <TextBlock Text="{Binding Amount}"
+                                       Grid.Column="3"/>
+                            <TextBlock Text="סך הכל :"
+                                       Grid.Column="4"/>
+                            <TextBlock Grid.Column="5">
+                                    <TextBlock.Text>
+                                        <MultiBinding Converter="{StaticResource cnvAmountToTotalPriceMultiConverter}">
+                                            <Binding Path="Amount"/>
+                                            <Binding Path="Item.Price"/>
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                            </TextBlock>
+                        </Grid>
+                       
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </GroupBox>
+        <TextBlock Text="סך הכל :"
+                   Grid.Row="3"/>
+        <TextBlock Text="{Binding Converter={StaticResource cnvOrderToTotalPriceIncludeGameTimeConverter}}"
+                   Grid.Row="3"
+                   Grid.Column="1"/>
+        <Button Content="שלם"
+                Grid.Row="4"
+                Margin="5"
+                Name="btnPay" Click="btnPay_Click" />
+        <Button Content="בטל"
+                Grid.Row="4"
+                Grid.Column="1"
+                Margin="5"
+                Name="btnCancel" Click="btnCancel_Click" />
+    </Grid>
+</Window>

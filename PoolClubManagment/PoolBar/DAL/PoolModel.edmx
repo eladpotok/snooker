@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="PoolBarModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="PoolBarModelStoreContainer">
+          <EntitySet Name="Item" EntityType="PoolBarModel.Store.Item" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ItemsToOrder" EntityType="PoolBarModel.Store.ItemsToOrder" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Order" EntityType="PoolBarModel.Store.Order" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_ItemsToOrder_Item" Association="PoolBarModel.Store.FK_ItemsToOrder_Item">
+            <End Role="Item" EntitySet="Item" />
+            <End Role="ItemsToOrder" EntitySet="ItemsToOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ItemsToOrder_Order" Association="PoolBarModel.Store.FK_ItemsToOrder_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="ItemsToOrder" EntitySet="ItemsToOrder" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Item">
+          <Key>
+            <PropertyRef Name="ItemId" />
+          </Key>
+          <Property Name="ItemId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Price" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ItemsToOrder">
+          <Key>
+            <PropertyRef Name="ItemId" />
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="ItemId" Type="int" Nullable="false" />
+          <Property Name="OrderId" Type="int" Nullable="false" />
+          <Property Name="Amount" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="OrderId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="GameHoursTime" Type="float" />
+        </EntityType>
+        <Association Name="FK_ItemsToOrder_Item">
+          <End Role="Item" Type="PoolBarModel.Store.Item" Multiplicity="1" />
+          <End Role="ItemsToOrder" Type="PoolBarModel.Store.ItemsToOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="ItemId" />
+            </Principal>
+            <Dependent Role="ItemsToOrder">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ItemsToOrder_Order">
+          <End Role="Order" Type="PoolBarModel.Store.Order" Multiplicity="1" />
+          <End Role="ItemsToOrder" Type="PoolBarModel.Store.ItemsToOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderId" />
+            </Principal>
+            <Dependent Role="ItemsToOrder">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PoolBarModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="PoolBarEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Item" EntityType="PoolBarModel.Item" />
+          <EntitySet Name="ItemsToOrder" EntityType="PoolBarModel.ItemsToOrder" />
+          <EntitySet Name="Order" EntityType="PoolBarModel.Order" />
+          <AssociationSet Name="FK_ItemsToOrder_Item" Association="PoolBarModel.FK_ItemsToOrder_Item">
+            <End Role="Item" EntitySet="Item" />
+            <End Role="ItemsToOrder" EntitySet="ItemsToOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ItemsToOrder_Order" Association="PoolBarModel.FK_ItemsToOrder_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="ItemsToOrder" EntitySet="ItemsToOrder" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Item">
+          <Key>
+            <PropertyRef Name="ItemId" />
+          </Key>
+          <Property Name="ItemId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Price" Type="Double" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ItemsToOrder">
+          <Key>
+            <PropertyRef Name="ItemId" />
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="ItemId" Type="Int32" Nullable="false" />
+          <Property Name="OrderId" Type="Int32" Nullable="false" />
+          <Property Name="Amount" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Item" Relationship="PoolBarModel.FK_ItemsToOrder_Item" FromRole="ItemsToOrder" ToRole="Item" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="OrderId" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="ItemsToOrder" Relationship="PoolBarModel.FK_ItemsToOrder_Order" FromRole="Order" ToRole="ItemsToOrder" />
+          <Property Type="Double" Name="GameHoursTime" />
+        </EntityType>
+        <Association Name="FK_ItemsToOrder_Item">
+          <End Role="Item" Type="PoolBarModel.Item" Multiplicity="1" />
+          <End Role="ItemsToOrder" Type="PoolBarModel.ItemsToOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="ItemId" />
+            </Principal>
+            <Dependent Role="ItemsToOrder">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ItemsToOrder_Order">
+          <End Role="Order" Type="PoolBarModel.Order" Multiplicity="1" />
+          <End Role="ItemsToOrder" Type="PoolBarModel.ItemsToOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderId" />
+            </Principal>
+            <Dependent Role="ItemsToOrder">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PoolBarModelStoreContainer" CdmEntityContainer="PoolBarEntities">
+          <EntitySetMapping Name="Item"><EntityTypeMapping TypeName="PoolBarModel.Item"><MappingFragment StoreEntitySet="Item">
+            <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Price" ColumnName="Price" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ItemsToOrder"><EntityTypeMapping TypeName="PoolBarModel.ItemsToOrder"><MappingFragment StoreEntitySet="ItemsToOrder">
+            <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+            <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+            <ScalarProperty Name="Amount" ColumnName="Amount" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Order"><EntityTypeMapping TypeName="PoolBarModel.Order"><MappingFragment StoreEntitySet="Order">
+            <ScalarProperty Name="GameHoursTime" ColumnName="GameHoursTime" />
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+            <ScalarProperty Name="Date" ColumnName="Date" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="PoolBarModel.Item" Width="1.5" PointX="0.75" PointY="1.25" Height="1.427958984375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoolBarModel.ItemsToOrder" Width="1.5" PointX="3.375" PointY="1.125" Height="1.592306315104167" IsExpanded="true" />
+        <EntityTypeShape EntityType="PoolBarModel.Order" Width="1.5" PointX="3" PointY="4.5" Height="1.4279589843749996" IsExpanded="true" />
+        <AssociationConnector Association="PoolBarModel.FK_ItemsToOrder_Item" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="1.9639794921875" />
+          <ConnectorPoint PointX="3.375" PointY="1.9639794921875" />
+        </AssociationConnector>
+        <AssociationConnector Association="PoolBarModel.FK_ItemsToOrder_Order" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.9375" PointY="4.5" />
+          <ConnectorPoint PointX="3.9375" PointY="2.717306315104167" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

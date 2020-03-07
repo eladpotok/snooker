@@ -1,0 +1,132 @@
+﻿<Window x:Class="GUI.Dialogs.dlgOrders"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        FlowDirection="RightToLeft"
+        xmlns:cnv="clr-namespace:GUI.Converters"
+        Title="דוחות" MinHeight="750" MinWidth="450" WindowStartupLocation="CenterScreen" Icon="/GUI;component/Resources/report.png">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFEFFAFF" Offset="0" />
+            <GradientStop Color="#FFC7DBE1" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.Resources>
+            <cnv:cnvListOfItemsToTotalPriceConverter 
+                x:Key="cnvListOfItemsToTotalPriceConverter"/>
+            <cnv:cnvDateTimeToShorterConverter 
+                x:Key="cnvDateTimeToShorterConverter"/>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="בחר זמנים">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="מתאריך :" Margin="5"/>
+                <DatePicker Grid.Column="1" Margin="5"
+                            Name="dtStart"/>
+                <TextBlock Text="עד תאריך :" Margin="5" Grid.Row="1"/>
+                <DatePicker Margin="5" Grid.Row="1" Grid.Column="1"
+                            Name="dtEnd"/>
+                <Button Content="הצג" Margin="5" Name="btnShowReport"
+                        Grid.ColumnSpan="2" Grid.Row="2" Click="btnShowReport_Click" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="הזמנות" Grid.Row="1">
+            <ListBox Name="lsbOrders">
+                <ListBox.Resources>
+                    <!--<SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}"
+                       Color="Transparent" />-->
+                    <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}"
+                       Color="Transparent" />
+                </ListBox.Resources>
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Vertical"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <GroupBox Header="הזמנה">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="תאריך הזמנה :"
+                                           Margin="5"/>
+                                <TextBlock Text="{Binding Date}"
+                                           Grid.Column="1"
+                                           Margin="5"/>
+                                <TextBlock Text="סך הכל תשלום :"
+                                           Margin="5"
+                                           Grid.Row="1"/>
+                                <TextBlock Text="{Binding ItemsToOrder, 
+                                    Converter={StaticResource cnvListOfItemsToTotalPriceConverter}}"
+                                           Margin="5"
+                                           Grid.Row="1" Grid.Column="1"/>
+                                <TextBlock Text="המוצרים :"
+                                           Grid.Row="2"
+                                           Margin="5"/>
+                                <ListBox ItemsSource="{Binding ItemsToOrder}"
+                                         Grid.Row="2"
+                                         HorizontalContentAlignment="Stretch"
+                                         Grid.Column="1"
+                                         Margin="5">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Text="{Binding Item.Name}"
+                                                           Grid.Column="0"/>
+                                                <TextBlock Text="{Binding Amount}"
+                                                           Grid.Column="1"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                                <TextBlock Text="זמן משחק :"
+                                           Grid.Row="3"
+                                           Margin="5"/>
+                                <TextBlock Text="{Binding GameHoursTime}"
+                                           Grid.Row="3"
+                                           Grid.Column="1"
+                                           Margin="5"/>
+                                <TextBlock Text="הזמנה משולחן סנוקר :"
+                                           Grid.Row="4"
+                                           Margin="5"/>
+                                <CheckBox  IsChecked="{Binding IsTableOrder}"
+                                           Grid.Row="4"
+                                           IsEnabled="False"
+                                           Margin="5"
+                                           Grid.Column="1"/>
+                            </Grid>
+                        </GroupBox>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </GroupBox>
+
+    </Grid>
+</Window>

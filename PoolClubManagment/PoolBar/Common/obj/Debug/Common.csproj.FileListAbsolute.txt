@@ -1,0 +1,5 @@
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Common\bin\Debug\Common.dll
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Common\bin\Debug\Common.pdb
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Common\obj\Debug\Common.dll
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Common\obj\Debug\Common.pdb

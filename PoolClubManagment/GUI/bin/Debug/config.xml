@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PricesForGame>
+  <PricePerMin Min="40" Price="15" />
+  <PricePerMin Min="60" Price="25" />
+</PricesForGame>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="GUI.Dialogs.dlgPlacesList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        FlowDirection="RightToLeft"
+        xmlns:cnv="clr-namespace:GUI.Converters"
+        Title="בחר מקום ישיבה" Height="300" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Resources>
+            <cnv:cnvBooleanToVisibilityConverter 
+                x:Key="cnvBooleanToVisibilityConverter"/>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <GroupBox Margin="5"
+                  Header="רשימת המקומות במועדון">
+            <ListBox Margin="5"
+                     ItemsSource="{Binding }"
+                     Name="lsbOrders">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding PlaceName}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </GroupBox>
+        <Button Name="btnMerge"
+                Margin="5"
+                Grid.Row="1"
+                Content="בחר" Click="btnMerge_Click" />
+    </Grid>
+</Window>

@@ -1,0 +1,87 @@
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgInputUser.baml
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\UserControls\ucNumericTextBox.baml
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgAddProducts.g.cs
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgInputPrice.g.cs
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgInputUser.g.cs
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgOrderCheck.g.cs
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\UserControls\ucNumericTextBox.g.cs
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\UserControls\ucPlace.g.cs
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\GUI_MarkupCompile.cache
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\GUI_MarkupCompile.lref
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\bin\Debug\GUI.exe.config
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\bin\Debug\GUI.exe
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\bin\Debug\GUI.pdb
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\bin\Debug\BL.dll
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\bin\Debug\Common.dll
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\bin\Debug\DAL.dll
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\bin\Debug\BL.pdb
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\bin\Debug\Common.pdb
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\bin\Debug\DAL.pdb
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgAddProducts.baml
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgInputPrice.baml
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgOrderCheck.baml
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\UserControls\ucPlace.baml
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\GUI.g.resources
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\GUI.Properties.Resources.resources
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\GUI.exe
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\GUI.pdb
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgOrders.baml
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgOrders.g.cs
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgPlacesList.baml
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgPlacesList.g.cs
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\UserControls\ucPricePerMin.g.cs
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\UserControls\ucPricePerMin.baml
+C:\Documents and Settings\אלעד\My Documents\Visual Studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgBill.baml
+C:\Documents and Settings\אלעד\My Documents\Visual Studio 2010\Projects\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgBill.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\bin\Debug\GUI.exe.config
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\GUI.exe
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\GUI.pdb
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\bin\Debug\GUI.exe
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\bin\Debug\GUI.pdb
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\bin\Debug\BL.dll
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\bin\Debug\Common.dll
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\bin\Debug\DAL.dll
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\bin\Debug\BL.pdb
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\bin\Debug\Common.pdb
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\bin\Debug\DAL.pdb
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgInputUser.baml
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\UserControls\ucNumericTextBox.baml
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgAddProducts.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgBill.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgInputPrice.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgInputUser.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgOrderCheck.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgOrders.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgPlacesList.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\UserControls\ucNumericTextBox.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\UserControls\ucPlace.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\UserControls\ucPricePerMin.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\GUI_MarkupCompile.cache
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\GUI_MarkupCompile.lref
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgAddProducts.baml
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgBill.baml
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgInputPrice.baml
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgOrderCheck.baml
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgOrders.baml
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\Dialogs\dlgPlacesList.baml
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\UserControls\ucPlace.baml
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\UserControls\ucPricePerMin.baml
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\GUI.g.resources
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\GUI.Properties.Resources.resources
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\EladPotok\Desktop\פרוייקטים\סנוקר\PoolClubManagment\GUI\bin\Debug\GUI.exe.config
+C:\Users\EladPotok\Desktop\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\GUI.exe
+C:\Users\EladPotok\Desktop\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\GUI.pdb

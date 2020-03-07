@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PoolBarModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="PoolBarEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Item" EntityType="PoolBarModel.Item" />
+    <EntitySet Name="ItemsToOrder" EntityType="PoolBarModel.ItemsToOrder" />
+    <EntitySet Name="Order" EntityType="PoolBarModel.Order" />
+    <AssociationSet Name="FK_ItemsToOrder_Item" Association="PoolBarModel.FK_ItemsToOrder_Item">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="ItemsToOrder" EntitySet="ItemsToOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemsToOrder_Order" Association="PoolBarModel.FK_ItemsToOrder_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="ItemsToOrder" EntitySet="ItemsToOrder" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="ItemId" />
+    </Key>
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ItemsToOrder">
+    <Key>
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Item" Relationship="PoolBarModel.FK_ItemsToOrder_Item" FromRole="ItemsToOrder" ToRole="Item" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="ItemsToOrder" Relationship="PoolBarModel.FK_ItemsToOrder_Order" FromRole="Order" ToRole="ItemsToOrder" />
+    <Property Type="Double" Name="GameHoursTime" />
+  </EntityType>
+  <Association Name="FK_ItemsToOrder_Item">
+    <End Role="Item" Type="PoolBarModel.Item" Multiplicity="1" />
+    <End Role="ItemsToOrder" Type="PoolBarModel.ItemsToOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="ItemId" />
+      </Principal>
+      <Dependent Role="ItemsToOrder">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemsToOrder_Order">
+    <End Role="Order" Type="PoolBarModel.Order" Multiplicity="1" />
+    <End Role="ItemsToOrder" Type="PoolBarModel.ItemsToOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="ItemsToOrder">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

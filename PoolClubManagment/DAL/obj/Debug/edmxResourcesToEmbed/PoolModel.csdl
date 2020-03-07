@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PoolClubDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="PoolClubDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Item" EntityType="PoolClubDBModel.Item" />
+    <EntitySet Name="ItemsToOrder" EntityType="PoolClubDBModel.ItemsToOrder" />
+    <EntitySet Name="Order" EntityType="PoolClubDBModel.Order" />
+    <AssociationSet Name="FK_ItemsToOrder_Item" Association="PoolClubDBModel.FK_ItemsToOrder_Item">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="ItemsToOrder" EntitySet="ItemsToOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemsToOrder_Order" Association="PoolClubDBModel.FK_ItemsToOrder_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="ItemsToOrder" EntitySet="ItemsToOrder" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="ItemId" />
+    </Key>
+    <Property Type="Int32" Name="ItemId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Price" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="IsCostume" />
+  </EntityType>
+  <EntityType Name="ItemsToOrder">
+    <Key>
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Type="Int32" Name="ItemId" Nullable="false" />
+    <Property Type="Int32" Name="OrderId" Nullable="false" />
+    <Property Type="Int32" Name="Amount" Nullable="false" />
+    <NavigationProperty Name="Item" Relationship="PoolClubDBModel.FK_ItemsToOrder_Item" FromRole="ItemsToOrder" ToRole="Item" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Type="Int32" Name="OrderId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="Date" Nullable="false" />
+    <Property Type="String" Name="GameHoursTime" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsTableOrder" Nullable="false" />
+    <NavigationProperty Name="ItemsToOrder" Relationship="PoolClubDBModel.FK_ItemsToOrder_Order" FromRole="Order" ToRole="ItemsToOrder" />
+  </EntityType>
+  <Association Name="FK_ItemsToOrder_Item">
+    <End Type="PoolClubDBModel.Item" Role="Item" Multiplicity="1" />
+    <End Type="PoolClubDBModel.ItemsToOrder" Role="ItemsToOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="ItemId" />
+      </Principal>
+      <Dependent Role="ItemsToOrder">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemsToOrder_Order">
+    <End Type="PoolClubDBModel.Order" Role="Order" Multiplicity="1" />
+    <End Type="PoolClubDBModel.ItemsToOrder" Role="ItemsToOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="ItemsToOrder">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

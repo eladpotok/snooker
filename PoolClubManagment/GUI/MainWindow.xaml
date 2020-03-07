@@ -1,0 +1,112 @@
+﻿<Window x:Class="GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:uc="clr-namespace:GUI.UserControls"
+        FlowDirection="RightToLeft"
+        Name="mwWindow"
+        Title="ניהול מועדון הסנוקר שלך" Height="350" Width="525" 
+        WindowStartupLocation="CenterScreen" WindowState="Maximized" 
+        Icon="/GUI;component/Resources/pool_icon.ico">
+    <Window.Resources>
+        <Storyboard x:Key="stbLogo"
+                    Storyboard.TargetProperty="Opacity"
+                    Storyboard.TargetName="txbLogo">
+            <DoubleAnimation From="1" To="0" Duration="0:0:2"/>
+        </Storyboard>
+        <Storyboard x:Key="stbGarbage"
+                    Storyboard.TargetProperty="Opacity"
+                    Storyboard.TargetName="brdGarbage">
+            <DoubleAnimation From="1" To="0.2" Duration="0:0:1"
+                             RepeatBehavior="Forever"
+                             AutoReverse="True"/>
+        </Storyboard>
+    </Window.Resources>
+    <Grid>
+        <Grid.Resources>
+            <Style x:Key="stlMenuBarBackground" TargetType="{x:Type Menu}">
+                <Setter Property="Height" Value="20"/>
+            </Style>
+            <Style TargetType="{x:Type MenuItem}" >
+                <Setter Property="Height" Value="20"/>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Style="{StaticResource stlMenuBarBackground}" FlowDirection="RightToLeft">
+            <Menu.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF893500" Offset="0.754" />
+                    <GradientStop Color="#FF9A774F" Offset="0.32" />
+                </LinearGradientBrush>
+            </Menu.Background>
+            <MenuItem Header="מפה" Foreground="White">
+                <MenuItem Header="טען מפה" Name="miLoadMap"
+                          Click="miLoadMap_Click"/>
+                <MenuItem Header="שמור מפה" Name="miSaveMap"
+                          Click="miSaveMap_Click"/>
+            </MenuItem>
+            <MenuItem Header="הוספה" Foreground="White">
+                <MenuItem.Icon>
+                    <Image Source="/GUI;component/Resources/add.png" 
+                           Height="10" Width="11"
+                           VerticalAlignment="Top"/>
+                </MenuItem.Icon>
+                <MenuItem Header="כיסא באר" Name="miAddChairBar" Tag="BarChair"
+                              Click="miAddPlace_Click"/>
+                <MenuItem Header="שולחן באר" Name="miAddTableBar" Tag="BarTable"
+                              Click="miAddPlace_Click"/>
+                <MenuItem Header="שולחן סנוקר" Name="miAddPoolTable" Tag="PoolTable"
+                              Click="miAddPlace_Click"/>
+                <MenuItem Header="מוצרים למחירה" Name="miAddProducts"
+                              Click="miAddProducts_Click"/>
+            </MenuItem>
+            <MenuItem Header="דוחות" Foreground="White" 
+                      Name="miOrderReport"
+                      Click="miOrderReport_Click">
+                <MenuItem.Icon>
+                    <Image Source="/GUI;component/Resources/report.png"
+                           Height="16" Width="16"/>
+                </MenuItem.Icon>
+            </MenuItem>
+        </Menu>
+        <Canvas Name="cnvPool" Grid.Row="1" AllowDrop="True" 
+                Drop="cnvPool_Drop" 
+                DragOver="cnvPool_DragOver">
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1C4B2D" Offset="0" />
+                    <GradientStop Color="#FF247547" Offset="0.131" />
+                </LinearGradientBrush>
+            </Canvas.Background>
+        </Canvas>
+        <!--<TextBlock Text="Pool Club Managment" Foreground="White" 
+                       Name="txbLogo"
+                       FontFamily="Algerian"
+                       FontSize="45" 
+                       Grid.Row="1"
+                       HorizontalAlignment="Center"                    
+                       VerticalAlignment="Center" />-->
+        <Image Source="/GUI;component/Resources/logo.png"
+               Name="txbLogo"
+               Grid.Row="1"
+               Width="263"
+               Height="565"
+               HorizontalAlignment="Center"                    
+               Margin="0,0,0,100"/>
+        <Border BorderBrush="Black"
+                BorderThickness="1"
+                Grid.Row="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Padding="10"
+                Name="brdGarbage"
+                AllowDrop="True"
+                Drop="brdGarbage_Drop"
+                Visibility="Collapsed">
+            <Image Source="/GUI;component/Resources/garbage.png"
+                       Height="24" Width="24"/>
+        </Border>
+    </Grid>
+</Window>

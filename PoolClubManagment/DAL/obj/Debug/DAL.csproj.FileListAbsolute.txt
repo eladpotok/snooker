@@ -1,0 +1,30 @@
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\DAL\bin\Debug\DAL.dll.config
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\DAL\bin\Debug\DAL.dll
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\DAL\bin\Debug\DAL.pdb
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\DAL\bin\Debug\Common.dll
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\DAL\bin\Debug\Common.pdb
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\DAL\obj\Debug\DAL.dll
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\DAL\obj\Debug\DAL.pdb
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\DAL\bin\Debug\DAL.dll.config
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\DAL\bin\Debug\DAL.dll
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\DAL\bin\Debug\DAL.pdb
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\DAL\bin\Debug\Common.dll
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\DAL\bin\Debug\Common.pdb
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\DAL\obj\Debug\DAL.dll
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\DAL\obj\Debug\DAL.pdb
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\DAL\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\DAL\obj\Debug\DAL.Properties.Resources.resources
+C:\Documents and Settings\אלעד\my documents\visual studio 2010\Projects\PoolClubManagment\DAL\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\DAL\bin\Debug\DAL.dll.config
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\DAL\bin\Debug\DAL.dll
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\DAL\bin\Debug\DAL.pdb
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\DAL\bin\Debug\Common.dll
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\DAL\bin\Debug\Common.pdb
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\DAL\obj\Debug\DAL.Properties.Resources.resources
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\DAL\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\DAL\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\DAL\obj\Debug\DAL.dll
+C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\DAL\obj\Debug\DAL.pdb

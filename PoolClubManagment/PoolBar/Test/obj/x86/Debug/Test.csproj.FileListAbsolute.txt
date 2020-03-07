@@ -1,0 +1,10 @@
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Test\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Test\bin\Debug\Test.exe
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Test\bin\Debug\Test.pdb
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Test\bin\Debug\DAL.dll
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Test\bin\Debug\Common.dll
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Test\bin\Debug\DAL.pdb
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Test\bin\Debug\Common.pdb
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Test\obj\x86\Debug\Test.exe
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Test\obj\x86\Debug\Test.pdb
+C:\Documents and Settings\ציונה\My Documents\Visual Studio 2010\Projects\Common\Test\bin\Debug\Test.exe.config

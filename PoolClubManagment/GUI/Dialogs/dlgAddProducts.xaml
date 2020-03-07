@@ -1,0 +1,65 @@
+﻿<Window x:Class="GUI.Dialogs.dlgAddProducts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FlowDirection="RightToLeft"
+        Name="mwProducts" MinWidth="300"
+        xmlns:uc="clr-namespace:GUI.UserControls"
+        Title="עריכת מוצרים למחירה" Height="500" Width="500" 
+        WindowStartupLocation="CenterScreen" Icon="/GUI;component/Resources/products%20%281%29.ico">
+    <Grid Loaded="Grid_Loaded" Name="grProducts">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Grid.ColumnSpan="2" Margin="5"
+                  Header="עריכת מוצרים">
+            <DataGrid Name="dgProducts" 
+                  MinWidth="100"
+                  Width="{Binding ElementName=grProducts, Path=Width}"
+                  Margin="5"
+                  SelectionUnit="FullRow"
+                  AutoGenerateColumns="True" 
+                  CanUserAddRows="True"
+                  CanUserDeleteRows="True">
+                <!--<DataGrid.Columns>
+                <DataGridTemplateColumn Header="שם" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ItemName}"/>  
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>-->
+            </DataGrid>
+        </GroupBox>
+        <GroupBox Header="תעריף משחק" Margin="5"
+            Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Image Source="/GUI;component/Resources/add.png" 
+                       Height="10" Width="11"
+                       Margin="5"
+                       MouseDown="AddImage_MouseDown"
+                       HorizontalAlignment="Left"/>
+                <ScrollViewer VerticalScrollBarVisibility="Visible"
+                              Grid.Row="1">
+                    <StackPanel  Orientation="Vertical" Margin="5"
+                            Name="spPrices" />
+                </ScrollViewer>
+            </Grid>
+        </GroupBox>
+        <Button Name="btnAccept" Content="אישור" 
+                Grid.Row="2" Grid.Column="0" Margin="5"
+                Height="40" Width="50" Click="btnAccept_Click" />
+        <Button Name="btnClose"  Content="בטל" 
+                Grid.Row="2" Grid.Column="1" Margin="5" 
+                Height="40" Width="50" Click="btnClose_Click" />
+    </Grid>
+</Window>

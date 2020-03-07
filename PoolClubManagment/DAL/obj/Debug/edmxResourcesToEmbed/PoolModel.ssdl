@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PoolClubDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="PoolClubDBModelStoreContainer">
+    <EntitySet Name="Item" EntityType="PoolClubDBModel.Store.Item" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ItemsToOrder" EntityType="PoolClubDBModel.Store.ItemsToOrder" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Order" EntityType="PoolClubDBModel.Store.Order" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_ItemsToOrder_Item" Association="PoolClubDBModel.Store.FK_ItemsToOrder_Item">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="ItemsToOrder" EntitySet="ItemsToOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemsToOrder_Order" Association="PoolClubDBModel.Store.FK_ItemsToOrder_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="ItemsToOrder" EntitySet="ItemsToOrder" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="ItemId" />
+    </Key>
+    <Property Name="ItemId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Price" Type="money" Nullable="false" />
+    <Property Name="IsCostume" Type="bit" />
+  </EntityType>
+  <EntityType Name="ItemsToOrder">
+    <Key>
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="OrderId" Type="int" Nullable="false" />
+    <Property Name="Amount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="GameHoursTime" Type="nvarchar(max)" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTableOrder" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ItemsToOrder_Item">
+    <End Role="Item" Type="PoolClubDBModel.Store.Item" Multiplicity="1" />
+    <End Role="ItemsToOrder" Type="PoolClubDBModel.Store.ItemsToOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="ItemId" />
+      </Principal>
+      <Dependent Role="ItemsToOrder">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemsToOrder_Order">
+    <End Role="Order" Type="PoolClubDBModel.Store.Order" Multiplicity="1" />
+    <End Role="ItemsToOrder" Type="PoolClubDBModel.Store.ItemsToOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="ItemsToOrder">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

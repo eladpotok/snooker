@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4AD9D19A-0728-4C48-BDCA-A3F60A578CE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BitmapToBitmapSourceConverter.cs" />
+    <Compile Include="Converters\cnvAmountToTotalPriceMultiConverter.cs" />
+    <Compile Include="Converters\cnvBooleamToImageSourceConverter.cs" />
+    <Compile Include="Converters\cnvBooleanToOppositeBooleanConverter.cs" />
+    <Compile Include="Converters\cnvBooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\cnvDateTimeToShorterConverter.cs" />
+    <Compile Include="Converters\cnvItemToOrderToPriceConverter.cs" />
+    <Compile Include="Converters\cnvItemToVisibilityConverter.cs" />
+    <Compile Include="Converters\cnvListOfItemsToTotalPriceConverter.cs" />
+    <Compile Include="Converters\cnvOrderToTotalPriceIncludeGameTimeConverter.cs" />
+    <Compile Include="Converters\cnvProductsAndGameTimeToTotalPriceConverter.cs" />
+    <Compile Include="Dialogs\dlgAddProducts.xaml.cs">
+      <DependentUpon>dlgAddProducts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgBill.xaml.cs">
+      <DependentUpon>dlgBill.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgInputPrice.xaml.cs">
+      <DependentUpon>dlgInputPrice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgInputUser.xaml.cs">
+      <DependentUpon>dlgInputUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgOrderCheck.xaml.cs">
+      <DependentUpon>dlgOrderCheck.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgOrders.xaml.cs">
+      <DependentUpon>dlgOrders.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgPlacesList.xaml.cs">
+      <DependentUpon>dlgPlacesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucNumericTextBox.xaml.cs">
+      <DependentUpon>ucNumericTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPlace.xaml.cs">
+      <DependentUpon>ucPlace.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPricePerMin.xaml.cs">
+      <DependentUpon>ucPricePerMin.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Dialogs\dlgAddProducts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\dlgBill.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\dlgInputPrice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\dlgInputUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\dlgOrderCheck.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\dlgOrders.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\dlgPlacesList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="UserControls\ucNumericTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\ucPlace.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\ucPricePerMin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.Config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\bar_table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\bar_chair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\pool_table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\pool_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\order.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\available.png" />
+    <Resource Include="Resources\busy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\continue.png" />
+    <Resource Include="Resources\pay.png" />
+    <Resource Include="Resources\print.png" />
+    <Resource Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\arrow_down.png" />
+    <Resource Include="Resources\arrow_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\products.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{4E5A5B43-AEDB-4462-A5ED-4330DA0442F2}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{024866DC-D66E-4658-BA21-EE504683DC29}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{29CE932C-B7D1-48BD-BB9E-7A35FD62EBA4}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\garbage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\merge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\products %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\move_order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\stop_time.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

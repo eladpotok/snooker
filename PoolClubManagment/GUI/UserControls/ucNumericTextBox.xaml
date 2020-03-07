@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="GUI.UserControls.ucNumericTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             FlowDirection="RightToLeft"
+             Name="uc" Height="30"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="txbValue" Grid.RowSpan="2" Margin="5" Width="40"
+                 Grid.Column="1"
+                 Text="{Binding ElementName=uc,Path=DefaultValue}"
+                 TextChanged="txbValue_TextChanged"
+                 PreviewTextInput="TextBox_PreviewTextInput"/>
+        <Button Grid.Column="0" Name="btnUp" Width="15" Height="15"
+                Click="btnUp_Click">
+            <Image Source="/GUI;component/Resources/arrow_up.png"
+                   Height="9" Width="7" />
+        </Button>
+        <Button Grid.Column="0" Grid.Row="1" Click="btnDown_Click"
+                Name="btnDown" Width="15" Height="15">
+            <Image Source="/GUI;component/Resources/arrow_down.png"
+                   Height="9" Width="7" />
+        </Button>
+    </Grid>
+</UserControl>
