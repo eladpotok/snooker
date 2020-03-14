@@ -27,3 +27,5 @@ C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\BL\obj\Debug\BL.csprojAsse
 C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\BL\obj\Debug\BL.csproj.CopyComplete
 C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\BL\obj\Debug\BL.dll
 C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\BL\obj\Debug\BL.pdb
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\BL\bin\Debug\x86\e_sqlite3.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\BL\bin\Debug\x64\e_sqlite3.dll

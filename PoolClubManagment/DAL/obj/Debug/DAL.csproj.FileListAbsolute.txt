@@ -30,3 +30,24 @@ C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\ס
 C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\DAL\obj\Debug\DAL.pdb
 C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\obj\Debug\DAL.dll
 C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\obj\Debug\DAL.pdb
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\x86\e_sqlite3.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\x64\e_sqlite3.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\DAL.dll.config
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\DAL.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\DAL.pdb
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\SQLite-net.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\System.Data.SQLite.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\Common.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\bin\Debug\Common.pdb
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\obj\Debug\DAL.Properties.Resources.resources
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\DAL\obj\Debug\DAL.csproj.CopyComplete

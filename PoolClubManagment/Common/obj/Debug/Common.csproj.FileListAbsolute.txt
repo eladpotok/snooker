@@ -15,3 +15,13 @@ C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\ס
 C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\Common\obj\Debug\Common.pdb
 C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\obj\Debug\Common.dll
 C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\obj\Debug\Common.pdb
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\bin\Debug\x86\e_sqlite3.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\bin\Debug\x64\e_sqlite3.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\bin\Debug\Common.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\bin\Debug\Common.pdb
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\bin\Debug\SQLite-net.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\obj\Debug\Common.csproj.CopyComplete
