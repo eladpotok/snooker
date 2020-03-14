@@ -13,3 +13,5 @@ C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\ס
 C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\Common\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\Common\obj\Debug\Common.dll
 C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\סנוקר\PoolClubManagment\Common\obj\Debug\Common.pdb
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\obj\Debug\Common.dll
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\Common\obj\Debug\Common.pdb

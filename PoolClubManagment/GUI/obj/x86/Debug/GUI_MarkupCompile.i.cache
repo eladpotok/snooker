@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\EladPotok\Desktop\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\GUI\obj\x86\Debug\
 GUI
 none
 false
 DEBUG;TRACE
-C:\Users\EladPotok\Desktop\פרוייקטים\סנוקר\PoolClubManagment\GUI\App.xaml
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\GUI\App.xaml
 11-473585740
 
-27741985364
-16-186710465
+27674847869
+16-1100875503
 Dialogs\dlgAddProducts.xaml;Dialogs\dlgBill.xaml;Dialogs\dlgInputPrice.xaml;Dialogs\dlgInputUser.xaml;Dialogs\dlgOrderCheck.xaml;Dialogs\dlgOrders.xaml;Dialogs\dlgPlacesList.xaml;MainWindow.xaml;UserControls\ucNumericTextBox.xaml;UserControls\ucPlace.xaml;UserControls\ucPricePerMin.xaml;
 
-True
+False
 

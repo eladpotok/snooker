@@ -85,3 +85,5 @@ C:\Documents and Settings\אלעד\שולחן העבודה\פרוייקטים\ס
 C:\Users\EladPotok\Desktop\פרוייקטים\סנוקר\PoolClubManagment\GUI\bin\Debug\GUI.exe.config
 C:\Users\EladPotok\Desktop\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\GUI.exe
 C:\Users\EladPotok\Desktop\פרוייקטים\סנוקר\PoolClubManagment\GUI\obj\x86\Debug\GUI.pdb
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\GUI\obj\x86\Debug\GUI.exe
+C:\Users\Shani\Source\Repos\snooker\PoolClubManagment\GUI\obj\x86\Debug\GUI.pdb
